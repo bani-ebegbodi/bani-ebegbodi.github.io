@@ -25,17 +25,30 @@
                     value="250000" />
                 <output class="price-output" for="price"></output>
                 <br>                
-                <button type="submit">Submit</button>                
+                <label for="color"> Choose a color:</label>
+                <input type="color" id="color" name="color" />
+                <output class="color-output" for="color"></output>
+                <br>
+                <button type="submit" id="button">Submit</button> 
+                <h1 id="text"></h1>               
             </form>
         </main>
         <script>
             const price = document.querySelector("#price");
             const output = document.querySelector(".price-output");
-
+            
             output.textContent = price.value;
 
             price.addEventListener("input", () => {
                 output.textContent = price.value;
+            });
+
+            const button = document.getElementById("button");
+            const text = document.getElementById("text");
+
+            button.addEventListener("click", function() {
+               text.innerText = "Your maximum house price is " + output.textContent + ".";
+
             });
         </script>
     </body>
