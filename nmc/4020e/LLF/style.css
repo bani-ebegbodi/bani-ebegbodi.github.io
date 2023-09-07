@@ -22,12 +22,14 @@ a {
 
 a:link {
     color: black;
-    background:rgb(239, 180, 190)
+    background:rgb(239, 180, 190);
+    text-decoration: none;
 }
 
 a:visited {
     color: rgb(78, 113, 78);
-    background-color:#d2b48c
+    background-color:#d2b48c;
+    text-decoration: none;
 }
 
 a:focus {
@@ -41,5 +43,6 @@ a:hover {
 
 a:active {
     background: #d2b48c;
-    color: rgb(103, 68, 68)
+    color: rgb(103, 68, 68);
+    text-decoration: none;
 }
