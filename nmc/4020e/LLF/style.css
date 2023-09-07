@@ -38,15 +38,17 @@ a:visited {
 a:focus {
     color: lightseagreen;
     text-decoration: none;
+    background-color: white;
 }
 
 a:hover {
     text-decoration: dotted;
-    text-decoration-color: #cbc3e3;
+    text-decoration-color: #c38fc7;
+    background-color: rgb(179, 182, 137);
 }
 
 a:active {
     background-color: #d2b48c;
-    color: rgb(103, 68, 68);
+    color: #664229;
     text-decoration: none;
 }
