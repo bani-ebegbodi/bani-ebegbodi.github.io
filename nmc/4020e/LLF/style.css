@@ -1,0 +1,13 @@
+ul {
+    padding-left: 2rem;
+    list-style-type: none;
+}
+
+ul li {
+    padding-left: 2rem;
+    background-image: url(images/flower.svg);
+    background-size: 1.6rem 1.6rem;
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+}
