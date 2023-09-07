@@ -1,3 +1,4 @@
+/* Unordered Bulleted List */
 ul {
     padding-left: 2rem;
     list-style-type: none;
@@ -9,4 +10,34 @@ ul li {
     background-position: 0 0;
     background-size: 15px 15px;
     background-repeat: no-repeat;
+}
+
+/* Links */
+a {
+    outline: none;
+    border: solid;
+    border-color: rgb(239, 180, 190);
+    border-radius: 50% 20% / 10% 40%;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: rgb(78, 113, 78);
+}
+
+a:focus {
+    color: lightseagreen;
+}
+
+a:hover {
+    text-decoration: dotted;
+    text-decoration-color: #cbc3e3;
+}
+
+a:active {
+    background: #d2b48c;
+    color: rgb(103, 68, 68)
 }
