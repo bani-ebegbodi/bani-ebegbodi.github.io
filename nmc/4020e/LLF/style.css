@@ -16,16 +16,18 @@ ul li {
 a {
     outline: none;
     border: solid;
-    border-color: rgb(239, 180, 190);
-    border-radius: 50% 20% / 10% 40%;
+    border-color: black;
+    border-radius: 30%;
 }
 
 a:link {
     color: black;
+    background:rgb(239, 180, 190)
 }
 
 a:visited {
     color: rgb(78, 113, 78);
+    background-color:#d2b48c
 }
 
 a:focus {
