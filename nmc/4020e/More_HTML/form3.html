@@ -2,7 +2,7 @@
 <html lang="en-US" >
     <head>
         <meta charset="utf-8"/>
-        <title>Form Practice 1</title>
+        <title>Form Practice 3</title>
         <style>
             h1 {
                font-size: 24px; 
@@ -12,7 +12,7 @@
     <body>
         <h1>Form Practice</h1>
         <main>
-            <form>
+            <form action="showme.html" method="post">
                 <label for="price">Choose a maximum house price:</label>
                 <br>
                 <input 
@@ -26,11 +26,10 @@
                 <output class="price-output" for="price"></output>
                 <br>                
                 <label for="color"> Choose a color:</label>
-                <input type="color" id="color" name="color" />
-                <output class="color-output" for="color"></output>
+                <input type="color" id="colorInput" name="color" />
                 <br>
-                <button type="submit" id="button">Submit</button> 
-                <h1 style="color: color-output;" id="text"></h1>               
+                <button type="submit" id="button" onclick=" selectColor()">Submit</button> 
+                <h1  id="text"></h1>               
             </form>
         </main>
         <script>
@@ -46,10 +45,17 @@
             const button = document.getElementById("button");
             const text = document.getElementById("text");
 
+            //maximum price text
             button.addEventListener("click", function() {
                text.innerText = "Your maximum house price is " + output.textContent + ".";
 
             });
+
+            //changing document color
+            function selectColor() {
+                let color = getElementById('colorInput');
+                document.body.style.backgroundColor = color.value;
+            }
         </script>
     </body>
 </html>
