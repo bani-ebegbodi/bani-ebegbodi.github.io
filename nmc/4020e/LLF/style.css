@@ -26,26 +26,30 @@ a {
 a:link {
     color: black;
     background-color:rgb(239, 180, 190);
+    text-decoration: none;
 }
 
 a:visited {
     color: rgb(78, 113, 78);
     background-color:#d2b48c;
+    text-decoration: none;
 }
 
 a:focus {
     color: lightseagreen;
     background-color: white;
+    text-decoration: none;
 }
 
 a:hover {
-    text-decoration: dotted;
-    text-decoration-color: #c38fc7;
     color:rgb(78, 113, 78);
     background-color: rgb(179, 182, 137);
+    text-decoration: dotted;
+    text-decoration-color: #c38fc7;
 }
 
 a:active {
     background-color: #d2b48c;
     color: #664229;
+    text-decoration: none;
 }
