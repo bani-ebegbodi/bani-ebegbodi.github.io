@@ -23,6 +23,9 @@ header::first-line {
 
 h2 {
     transform: rotate(10deg);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: inline-block;
 }
 
 @font-face {
