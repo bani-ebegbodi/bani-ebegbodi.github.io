@@ -51,3 +51,13 @@ a:active {
     color: #664229;
     text-decoration: underline wavy;
 }
+
+/* Fonts */
+@font-face {
+    font-family: "quicksandbold";
+    src: url(quicksand/Quicksand-BoldItalic.otf);
+}
+
+#quicksand {
+    font-family: quicksandbold;
+}
