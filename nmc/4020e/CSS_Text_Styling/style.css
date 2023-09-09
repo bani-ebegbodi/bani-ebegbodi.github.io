@@ -1,8 +1,38 @@
 @font-face {
     font-family: quicksand;
-    src: url();
+    src: url(../fonts/quicksand/Quicksand-Regular.otf);
 }
 
-body {
+html {
     size: 10px;
+    font-family: quicksand;
+    background-color: pink;
+}
+
+p {
+    font-size: 2rem;
+    line-height: 1.5;
+    white-space: pre-line;
+    margin: 50px;
+}
+
+h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-shadow: 5px 1px 6px black;
+    color: rgb(105, 63, 63);
+}
+
+h2 {
+    font-size: 4rem;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 3rem;
+    margin: 50px;
+}
+
+h1, h2, h3 {
+    text-align: center;
 }
