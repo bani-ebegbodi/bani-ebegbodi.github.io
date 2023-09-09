@@ -4,15 +4,21 @@
     background-image: radial-gradient(circle, blue, green, orange, pink);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 150%;
-    border-radius: 50%;
+    background-size: contain;
+    border-radius: 200%;
 }
 
 html {
-    height: 300px;
-    width: 300px;
+    font-size: 10px;
 }
 
-a:hover {
-    outline: black, 15px;
+#central a {
+    width: 30rem;
+    height: 30rem;
+    display: block;
+}
+
+
+#central a:hover {
+    outline: pink double 15px;
 }
