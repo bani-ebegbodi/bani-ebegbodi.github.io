@@ -20,5 +20,5 @@ html {
 
 
 #central a:hover {
-    outline: pink double 15px;
+    outline: pink, double, 15px;
 }
