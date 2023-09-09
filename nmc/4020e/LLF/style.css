@@ -55,7 +55,7 @@ a:active {
 /* Fonts */
 @font-face {
     font-family: "quicksandbold";
-    src: url(quicksand/Quicksand-BoldItalic.otf);
+    src: url(fonts/quicksand/Quicksand-BoldItalic.otf);
 }
 
 #quicksand {
