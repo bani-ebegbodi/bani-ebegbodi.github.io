@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "canada_tawa_cute";
+    src: url(../../fonts/2787100-canda-tawa-cute-font/TTF/Canda\ Tawa\ Regular.ttf);
+}
+
+body {
+    background-color: #FAA94A;
+}
+
+div {
+    text-align: center;
+}
+h1 {
+    font-family: "canada_tawa_cute";
+    font-size: 70px;
+    color: #6d412a;
+    margin-top: 70px;
+    text-align: center;
+}
+
+
+#input1, #input2 {
+    font-family: "canada_tawa_cute";
+    font-size: 50px;
+    background-color: #b87d4b;
+    margin-bottom: 40px;
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    color:aliceblue;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+button {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    border: none;
+    font-family: "canada_tawa_cute";
+    font-size: 30px;
+    color: #ffe5b6;
+    background-color:#6d412a;
+    margin-right: 30px;
+    margin-left: 30px;
+
+}
+
+#output {
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: none;
+    border-radius: 30px;
+    background-color:#b87d4b;
+    color:aliceblue;
+    text-align: center;
+    font-family: "canada_tawa_cute";
+    font-size: 80px;
+}
