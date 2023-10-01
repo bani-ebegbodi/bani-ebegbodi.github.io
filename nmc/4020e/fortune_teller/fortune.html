@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8"> 
+        <title>Fortune Teller</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        
+        <h1>Fortune Teller</h1>
+        <img id="left_hand" src="img/left_hand.png" atl="Left Skeleton hand">
+        <img id="ball" src="img/ball.png" atl="Cystal Ball">
+        <img id="right_hand" src="img/right_hand.png" alt="Right Skeleton hand">
+        <div id="result"></div>
+        <input type="text" id="nameHere" placeholder="Your name here"><br>
+        <button onclick="fortune()">Your Fortune</button>
+    </body>
+    </html>
+    
+    <!--JavaScript-->
+    <script>
+        let outcomes = ["recieve a gift of $100.", "pass all of your classes this semester.", "wake up late this week.", "cross paths with a black cat this month.", "have a fun holiday season."];
+        function fortune() {
+            let name = document.querySelector('#nameHere').value;
+            let item = Math.floor((Math.random() * outcomes.length));
+            let result = document.querySelector('#result');
+
+            result.innerHTML = name + ", your fortune is that you will " + outcomes[item];
+        }
+    </script>

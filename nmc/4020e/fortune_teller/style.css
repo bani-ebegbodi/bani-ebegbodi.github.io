@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "amstrong";
+    src: url();
+}
+
+body {
+    background-color: #a359a0;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-size: 70px;
+    color: #ffd230;
+}
+
+#ball {
+    width: 450px;
+    margin-bottom: 80px;
+}
+
+
+#left_hand, #right_hand {
+    width: 300px;
+}
+
+div {
+    margin-bottom: 60px;
+}
+
+input, button {
+    background-color: #800080;
+    color: #ffd230;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 10px;
+}
+
+button {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 40px;
+}
