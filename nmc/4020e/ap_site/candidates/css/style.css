@@ -1,0 +1,8 @@
+#alsoRan {
+display: flex;
+flex-flow: row wrap;
+flex: 0 1 auto;
+gap: 40px;
+margin-left: 30px;
+margin-right: 30px;
+}

@@ -9,5 +9,5 @@ let output = document.querySelector('#alsoRan');
 
 for (var i = 0; i < candidateNames.length; i++) {
     output.innerHTML += "<li>" + candidateNames[i] + "<br> <img src=pix/" + candidatePix[i] + "><br>" + "</li>";
-}
+} 
 
