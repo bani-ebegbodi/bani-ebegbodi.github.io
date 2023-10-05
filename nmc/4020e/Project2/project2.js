@@ -22,7 +22,7 @@ let previous3 = document.querySelector('#previous3');
 //canidate one
 let i = 0;
 function canShow(plusMinus) {
-    output1.innerHTML = "<div class='cand'>" + candidateNames1[i] + "<br><img src=pix/" + candidatePix1[i] + "></div>";
+    output1.innerHTML = "<br><div class='cand'>" + candidateNames1[i] + "<br><img src=pix/" + candidatePix1[i] + "></div><br>";
     i += plusMinus;
     if (i == candidateNames1.length) {
         i = 0;
@@ -43,7 +43,7 @@ previous1.onclick = function() {
 //canidate two
 let j = 0;
 function canShow2(plusMinus) {
-    output2.innerHTML = "<div class='cand'>" + candidateNames2[j] + "<br><img src=pix/" + candidatePix2[j] + "></div>";
+    output2.innerHTML = "<br><div class='cand'>" + candidateNames2[j] + "<br><img src=pix/" + candidatePix2[j] + "></div><br>";
     j += plusMinus;
     if (j == candidateNames2.length) {
         j = 0;
@@ -63,7 +63,7 @@ previous2.onclick = function() {
 //canidate three
 let k = 0;
 function canShow3(plusMinus) {
-    output3.innerHTML = "<div class='cand'>" + candidateNames3[k] + "<br><img src=pix/" + candidatePix3[k] + "></div>";
+    output3.innerHTML = "<br><div class='cand'>" + candidateNames3[k] + "<br><img src=pix/" + candidatePix3[k] + "></div><br>";
     k += plusMinus;
     if (k == candidateNames3.length) {
         k = 0;
