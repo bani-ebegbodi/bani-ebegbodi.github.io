@@ -1,0 +1,13 @@
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.candidate {
+    flex: 3 200px;
+}
