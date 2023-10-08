@@ -32,7 +32,7 @@ function quote(){
 
   if (classObject.hasOwnProperty(sName) == true) {
     document.querySelector('#aboutme').innerHTML = classObject[sName];
-    document.querySelector('#image').innerHTML = "<img src= 'pix/" + sName + ".jpg'>";
+    document.querySelector('#image').innerHTML = "<img src= 'pix/pix/" + sName + ".jpg'>";
   } else document.querySelector('#aboutme').innerHTML = sName + " is not in the class. Try again.";
    //if-else 
 } //quote 
