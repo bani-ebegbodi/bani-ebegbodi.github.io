@@ -79,4 +79,4 @@ var asteroid = {
 }
 
 let data = document.querySelector('#asteroid').innerHTML = "The asteroid named " + asteroid.name + " is between " + asteroid.estimated_diameter.miles.estimated_diameter_min + " and " + asteroid.estimated_diameter.miles.estimated_diameter_max + " miles wide, and will miss striking " + asteroid.close_approach_data[0].orbiting_body + " by approximately " + asteroid.close_approach_data[0].miss_distance.miles + " miles.";
-let link = document.querySelector('#link').innerHTML = "<a href='" + asteroid.links.self + "'>Helen</a>";
+let link = document.querySelector('#link').innerHTML = "<a href='" + asteroid.nasa_jpl_url + "'>Helen</a>";
