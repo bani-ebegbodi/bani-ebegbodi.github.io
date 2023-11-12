@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>SWF2 Jukebox</title>
+        <style>
+            @font-face {
+                font-family: "bebas";
+                src: url(../fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+            }
+
+            @font-face {
+                font-family: 'quicksand';
+                src: url(../fonts/quicksand/Quicksand-Regular.otf);
+            }
+
+            html {
+                background-image: linear-gradient(70deg, grey, black);   
+                height: 100%;
+            }
+            
+            body {
+                color: white;
+                text-align: center;
+                max-height: 100%;
+            }
+
+            h1 {
+                font-family: 'bebas';
+                font-size: 60px;
+                margin-top: 50px;
+            }
+            
+            h2 {
+                font-family: 'bebas';
+                font-size: 40px;
+            }
+
+            p {
+                font-family: 'quicksand';
+                margin-left: 80px;
+                margin-right: 80px;
+            }
+
+            .name {
+                font-family: 'bebas';
+                font-size: 20px;
+            }
+
+            #crews {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                text-align: center;
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+
+            a:visited {
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            a:active {
+                text-decoration: underline;
+            }
+
+            #crewpic {
+                width: 300px;
+            }
+
+            #insta, #yt {
+                width: 50px;
+                margin-right: 40px;
+                margin-left: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Street Woman Fighter 2 Jukebox</h1>
+        <p>Street Woman Fighter 2 is the second season of the famous South Korean competition show, Street Woman Fighter. This competition show showcases all-women dance crews, not only in South Korea, but also internationally. With season two coming to a close, here are featured the final 4 crews, 1Million, Bebe, Jam Republic, and Mannequeen, and the songs they choose for their final missions, "Global Artist" Mission and "Ending Credit" Mission.</p>
+        <h2>Crews</h2>
+        <!--Image cards of each team in a flexbox-->
+        <div id="crews"></div>
+        <h2>Follow Street Woman Fighter</h2>
+        <a href='https://www.instagram.com/mnet_dance/' title="Instagram"><img id='insta' src="pics/insta.png"></a>
+        <a href="https://www.youtube.com/c/TheChoomofficial/videos?app=desktop" title="Youtube"><img id='yt' src="pics/yt.png"></a>
+    </body>
+</html>
+<script>
+    let crewNames = ["1Million", "Bebe", "Jam Republic", "Mannequeen"];
+    let ref = ["1m", "bebe", "jr", "mq"];
+    let output = document.querySelector('#crews');
+
+    for (var i = 0; i < crewNames.length; i++) {
+        output.innerHTML += "<a href='" + ref[i] + ".html' title='" + crewNames[i] + "'><img id='crewpic' src='pics/" + ref[i] + ".png'><div class='name'>" + crewNames[i] + "</div></a>";
+    }
+</script>

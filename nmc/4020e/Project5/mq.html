@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Mannequeen</title>
+        <style>
+            @font-face {
+                font-family: 'bebas';
+                src: url(../fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+            }
+
+            @font-face {
+                font-family: 'quicksand';
+                src: url(../fonts/quicksand/Quicksand-Bold.otf);
+            }
+
+            html {
+                background-image: linear-gradient(rgb(240, 143, 6), white);   
+
+            }
+
+            body {
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+            
+            #title {
+                width: 300px;
+                margin-top: 40px;
+            }
+
+            #card {
+                text-align: center;
+            }
+
+            #back {
+                margin-left: 80px;
+            }
+
+            button {
+                color: white;
+                background-color: black;
+                border-radius: 10px;
+                font-size: 20px;
+                padding: 5px 10px;
+                font-family: 'bebas';
+            }
+
+            h2 {
+                font-family: 'bebas';
+                font-size: 40px;
+            }
+
+            h3 {
+                font-family: 'bebas';
+                font-size: 22px;
+                color: rgb(85, 82, 82);
+            }
+
+            p {
+                font-family: 'quicksand';
+                margin-left: 80px;
+                margin-right: 80px;
+            }
+
+            .album {
+                width: 100px;
+            }
+
+            .content {
+                display: flex;
+                flex: row;
+                justify-content: space-around;
+                text-align: center;
+                
+            }
+
+            #juke {
+                text-align: center;
+            }
+
+            a {
+                color: black;
+                text-decoration: underline;
+            }          
+
+            a:visited {
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+                color: white;
+            }
+
+            a:active {
+                text-decoration: underline;
+            
+            }
+        </style>
+    </head>
+    <body>
+        <a href="jukebox.html" title="back"><button id="back">Back</button></a><br>
+        <div id='card'><img id='title' title='Mannequeen' src="pics/mq.title.jpg"></div>
+        <p>Mannequeen, one of the finalits of Street Woman Fighter Season 2, demonstrated notable performances throughout the competition, bringing to the stage their unique styles of wacking. In the Global Artist Mission, they selected songs by Lady Gaga for their performance and ended the season with songs from Christina Aguilera as their Ending Credit Performance.</p>
+        <div id="juke"></div>
+        <!--Global Artist Mission songs-->
+        <section class="content">
+            <div id="global">
+                <a href="https://youtu.be/uRoRFL6kWJs?si=luL5Q7IoybURnhWs" title="Mannequeen Global Artist Mission Performance"><h2>Global Artist Mission</h2></a>
+                <section class="jukebox1">
+                    <div class="item1">
+                        <img class="album" src="music/albums/pokerface.png"><br>
+                        <h3>Poker Face - Lady Gaga</h3>
+                        <button onclick="player('music/pokerface.m4a')">Play Song</button><br>
+                    </div><br><br>
+                    <div class="item2">
+                        <img class="album" src="music/albums/german.png"><br>
+                        <h3>ScheiBe - Lady Gaga</h3>
+                        <button onclick="player('music/babyboy.m4a')">Play Song</button><br>
+                    </div><br><br>
+                    <div class="item3">
+                        <img class="album" src="music/albums/judas.png"><br>
+                        <h3>Judas - Lady Gaga</h3>
+                        <button onclick="player('music/judas.m4a')">Play Song</button><br>
+                    </div>
+                </section>
+            </div>
+            <!--Ending Credits songs-->
+            <div id="ending">
+                <a href="https://youtu.be/2b5AcAaEU2I?si=a6gWKIDAEVK7O6Lr" title="Mannequeen Ending Credit Mission Performance"><h2>Ending Credit Mission</h2></a>
+                <section class="jukebox2">
+                    <div class="item4">
+                        <img class='album' src="music/albums/ca.png">
+                        <h3>Express - Christina Aguilera</h3>
+                        <button onclick="player('music/express.m4a')">Play Song</button>
+                    </div><br><br>
+                    <div class="item5">
+                        <img class='album' src="music/albums/ca.png">
+                        <h3>The Beautiful People - Christina Aguilera</h3>
+                        <button onclick="player('music/beautifulpeople.m4a')">Play Song</button>
+                    </div><br><br>
+                    <div class="item6">
+                        <img class='album' src="music/albums/ca.png">
+                        <h3>Show Me How You Burlesque - Christina Aguilera</h3>
+                        <button onclick="player('music/showmehow.m4a')">Play Song</button>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </body>
+</html>
+<script>
+    let juke = document.querySelector('#juke');
+    function player(tune) {
+        juke.innerHTML = "<audio controls autoplay src='" + tune + "' type='audio/m4a'></audio>";
+    }
+</script>

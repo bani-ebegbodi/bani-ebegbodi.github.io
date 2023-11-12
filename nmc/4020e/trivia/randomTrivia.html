@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Random Trivia</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+
+        @font-face {
+            font-family: 'quicksand';
+            src: url(../fonts/quicksand/Quicksand-Regular.otf);
+        }
+
+        body {
+            font-family: 'quicksand';
+            text-align: center;
+            background-color: rgb(106, 121, 82);
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-top: 60px;
+        }
+
+        .box {
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+
+        #category {
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+        #question {
+            font-size: 30px;
+        }
+        
+        #answer {
+            font-style: italic;
+            font-size: 30px;
+            background-color: rgb(19, 77, 19);
+            background-size: 30px;
+            color: rgb(201, 195, 195);
+            margin-bottom: 40px;
+        }
+
+        button {
+            border-radius: 30px;
+            border-color:black;
+            padding: 15px 20px;
+            font-size: 20px;
+            background-color: rgb(222, 189, 147);
+            font-family: "quicksand";
+            font-weight: bold;
+            color: rgb(95, 52, 4);
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+    </style>
+    </head>
+    <body>
+        <h1>Trivia!</h1> 
+        <div class="box1">
+            <div id="category"></div><br>
+            <div id="question"></div><br><br>
+        </div>
+        <div id="answer"></div><br>
+        <button onclick="qa()">New Question</button>
+        <button onclick="showAnswer()">Show Answer</button>
+    </body>
+</html>
+<script>
+    //variables
+    var question = document.querySelector("#question");
+    var answer = document.querySelector("#answer");
+    var category = document.querySelector("#category");
+    var theAnswer = "";
+
+    //qa function
+    function qa() {
+        $.getJSON("https://jservice.io/api/random", function(data) { 
+            question.innerHTML = data[0].question;
+            category.innerHTML = "Category: " + data[0].category.title;
+            answer.innerHTML = "";
+            theAnswer = data[0].answer;
+        });
+    } //qa
+
+    //showAnswer function 
+    function showAnswer() {
+        answer.innerHTML = theAnswer;
+    } //showAnswer 
+</script>

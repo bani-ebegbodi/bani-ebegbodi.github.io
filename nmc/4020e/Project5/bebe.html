@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Bebe</title>
+        <style>
+            @font-face {
+                font-family: 'bebas';
+                src: url(../fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+            }
+
+            @font-face {
+                font-family: 'quicksand';
+                src: url(../fonts/quicksand/Quicksand-Bold.otf);
+            }
+
+            html {
+                background-image: linear-gradient(rgb(65, 150, 235), white);   
+
+            }
+
+            body {
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+            
+            #title {
+                width: 300px;
+                margin-top: 40px;
+            }
+
+            #card {
+                text-align: center;
+            }
+
+            #back {
+                margin-left: 80px;
+            }
+
+            button {
+                color: white;
+                background-color: black;
+                border-radius: 10px;
+                font-size: 20px;
+                padding: 5px 10px;
+                font-family: 'bebas';
+            }
+
+            h2 {
+                font-family: 'bebas';
+                font-size: 40px;
+            }
+
+            h3 {
+                font-family: 'bebas';
+                font-size: 22px;
+                color: rgb(85, 82, 82);
+            }
+
+            p {
+                font-family: 'quicksand';
+                margin-left: 80px;
+                margin-right: 80px;
+            }
+
+            .album {
+                width: 100px;
+            }
+
+            .content {
+                display: flex;
+                flex: row;
+                justify-content: space-around;
+                text-align: center;
+                
+            }
+
+            #juke {
+                text-align: center;
+            }
+
+            a {
+                color: black;
+                text-decoration: underline;
+            }          
+
+            a:visited {
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+                color: white;
+            }
+
+            a:active {
+                text-decoration: underline;
+            }
+          
+        </style>
+    </head>
+    <body>
+        <a href="jukebox.html" title="back"><button id="back">Back</button></a><br>
+        <div id='card'><img id='title' title='Bebe' src="pics/bebe.title.jpg"></div>
+        <p>The dance crew Bebe, one of the finalists and the winner for Street Woman Fighter Season 2, is the youngest finalist group. Many of their dances have gained popularity and set trends since the release of the season. For their Global Mission Performance, they choose Rihanna and wrapped up the season with a masked performance as their Ending Credit Performance.</p>
+        <div id="juke"></div>
+        <!--Global Artist Mission songs-->
+        <section class="content">
+            <div id="global">
+                <a href="https://youtu.be/v_CL9cOykKY?si=T3QfGnoyqfyBE5IQ" title="Bebe Global Artist Mission Performance"><h2>Global Artist Mission</h2></a>
+                <section class="jukebox1">
+                    <div class="item1">
+                        <img class="album" src="music/albums/cockiness.png"><br>
+                        <h3>Cockiness(Love It) - Rihanna</h3>
+                        <button onclick="player('music/cockiness.m4a')">Play Song</button><br>
+                    </div><br><br>
+                    <div class="item2">
+                        <img class="album" src="music/albums/s&m.png"><br>
+                        <h3>S&M - Rihanna</h3>
+                        <button onclick="player('music/s&m.m4a')">Play Song</button><br>
+                    </div>
+                </section>
+            </div>
+            <!--Ending Credits songs-->
+            <div id="ending">
+                <a href="https://youtu.be/V146At9emQc?si=DtoPPK9pw5H6sIY0" title="Bebe Ending Credit Mission Performance"><h2>Ending Credit Mission</h2></a>
+                <section class="jukebox2">
+                    <div class="item3">
+                        <img class='album' src="music/albums/praisegod.png">
+                        <h3>Praise God - Kanye</h3>
+                        <button onclick="player('music/praisegod.m4a')">Play Song</button>
+                    </div><br><br>
+                    <div class="item4">
+                        <img class="album" src="music/albums/runit.png"><br>
+                        <h3>Run It - DJ Snake</h3>
+                        <button onclick="player('music/runit.m4a')">Play Song</button><br>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </body>
+</html>
+<script>
+    let juke = document.querySelector('#juke');
+    function player(tune) {
+        juke.innerHTML = "<audio controls autoplay src='" + tune + "' type='audio/m4a'></audio>";
+    }
+</script>
