@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Vue Part II</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <style>
+            img {
+                width: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="us">
+            <!--<div v-for="eachStudent in yall">
+                <h2>{{eachStudent.stu_name}} {{eachStudent.last_name}}</h2>
+                <img :src="dompart1 + eachStudent.domain + dompart2" />
+                <p>{{eachStudent.fact}}</p>
+            </div>-->
+
+            <!--<button v-on:click = "showpic">Classmates</button>
+            <h2>{{stuname}}</h2>-->
+
+            <img :src="image"><br>
+            <select v-model="oswald" v-on:change="displayImage()">
+                <option v-for="eachStudent in yall">{{eachStudent.stu_name}}</option>
+                <option v-for="eachStudent in yall" :value="dompart1 + eachStudent.domain + dompart2"></option>
+            </select>
+            <p>{{oswald}}</p>
+        </div>
+    </body>
+</html>
+<!--Javascript-->
+<script src="youguys/youguys.js"></script>

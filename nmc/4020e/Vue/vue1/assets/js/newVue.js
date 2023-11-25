@@ -80,7 +80,7 @@ var getColor = new Vue ({
 
 }) //getColor
 
-var getSize = new Vue ({
+/*var getSize = new Vue ({
     el: 'function',
     data: {
         bgSize: '',
@@ -91,7 +91,7 @@ var getSize = new Vue ({
             this.bgSize = size
         }
     }
-})
+}) //getSize */
 
 var contact = new Vue ({
     el: '#contact',
