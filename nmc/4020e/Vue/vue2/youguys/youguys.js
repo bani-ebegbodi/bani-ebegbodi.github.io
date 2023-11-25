@@ -3,6 +3,12 @@
  var studentData = new Vue ({
     el: '#us',
     data: {
+        dompart1: "http://",
+        dompart2: "/images/me.jpg",
+        image: "https://bit.ly/2U2OCs0",
+        stuname: "",
+        counter: 0,
+        oswald: "nothing yet",
         yall: [{
                 "stu_name": "Lise",
                 "last_name": "Xu",
@@ -242,16 +248,9 @@
                 "fact": "  I used to play viola.",
                 "section": "910",
                 "counter": "176"
-            }],
-
-            dompart1: "http://",
-            dompart2: "/images/me.jpg",
-            image: "https://bit.ly/2U2OCs0",
-            stuname: "",
-            counter: 0,
-            oswald: "nothing yet"
+            }]
         },
-        
+        methods: {
         showpic() {
             this.stuname = this.yall[this.counter].stu_name + " " + this.yall[this.counter].last_name;
             this.image = this.dompart1 + this.yall[this.counter].domain + this.dompart2;
@@ -264,6 +263,6 @@
         displayImage() {
             this.image = this.oswald;
         }
-
+    }
         
     }) //studentData
