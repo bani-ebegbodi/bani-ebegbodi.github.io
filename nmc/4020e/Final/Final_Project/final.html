@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Booth</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+    <img id="bbs" src="images/book_booth_sign.svg"/>
+    <h1 id="maker">Banibe Ebegbodi</h1>
+    <p id="intro">Welcome to my Book Booth! I can recommend you books based on one word you provide! Give it a try!</p>
+    <input type="text" id="subjectInput" placeholder="Enter a subject..." oninput="validateInput()">
+    <button onclick="getBooks()">Get Books</button><br><br>
+    <div id="message" style="color: red;"></div>
+    <div id="books"></div>
+</body>
+</html>
+<!--Javascript-->
+<script src="final.js"></script>
+
