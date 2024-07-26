@@ -1,15 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Banibe Ebegbodi</title>
-</head>
-<body>
-    <h1>Main Content</h1>
-    <!-- Your main content here -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Banibe Ebegbodi Portfolio</title>
+    <link rel="icon" href="images/be_logo.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <!--Opening-->
+    <section id="home">
+      <!--Navigation Bar-->
+      <header class="navbar">
+        <a href="#home"><img id="home_logo" src="images/be_logo.svg" /></a>
+        <hr class="seperator" />
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </header>
+      <div class="home">
+        <div class="name-shape-space">
+          <h1 id="name">
+            <span id="bold">B</span>anibe <span id="bold">E</span>begbodi
+          </h1>
+          <div class="shapes">
+            <p style="color: #eee3dc;">
+              placeholder, placeholder, placeholder
+            </p>
+          </div>
+        </div>
+        <div class="description">
+          <div class="desc-line">
+            <p>
+              An aspiring
+              <span style="color: #c8553d">Frontend Developer</span> at the
+              University of Georgia with a major in Cognitive Science and a
+              minor in Computer Science. I strive to improve my designs and
+              cultivate tools for future opportunties.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
-</body>
+    <!--About Me-->
+    <section id="about">
+      <div class="triangle-container">
+        <div class="about-triangle"></div>
+          <div class="triangle-content">
+            <h1 id="about_me"><span id="bold">A</span>bout <span id="bold">M</span>e</h1>
+            <a href="https://docs.google.com/document/d/1oOX8ZDuCJ8AmHBmA9mApYbVRKnhn4G9h/edit?usp=sharing&ouid=112148631822025942460&rtpof=true&sd=true" target="_blank">
+              <button id="resume">
+                Resume
+              </button>
+            </a>
+          </div>
+      </div>
+      <div class="about-line">
+        <p>
+          <span style="color: #c8553d">Hello!</span> I'm <span style="color:#c8553d">Banibe Ebegbodi</span>, a Cognitive Science student at the
+          University of Georgia. My passions lie in frontend development, physical
+          technology, such as 3D printing and laser cutting, and improving user
+          experiences. My future goals involve AI oriented research, with Natural
+          Language Processing (NLP) at the forefront.
+        </p>
+        <img >
+        <div class="circle">
+          
+        </div>
+      </div>
+    </section>
+
+    <!--Projects-->
+    <section id="projects">
+      <div class="project-flexbox">
+        <div class="feat-line">
+          <h2>
+            Featured Work
+          <h2>
+        </div>
+        <div class="sandwiched-projects">
+          <div class="left-projects">
+            <a href="https://medium.com/@bani-ebegbodi/pass-the-plate-a-travel-app-focusing-on-food-discovery-planning-35b7f0db4d08" target="_blank">
+              <div class="project-1">
+                <div class="p1-content">
+                  <h3>
+                    Pass the Plate
+                  </h3>
+                  <p>
+                    Using Figma, I created a Millennial and Gen-Z travel app prototype that 
+                    focuses on food discovery and meal planning. I went through a low-fidelity 
+                    planning stage on paper and pencil, worked my way up to a mid-fidelity wireframe, 
+                    and ended on a high-fidelity prototype of a finalized version of Pass the Plate.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <div class="project-2">
+              <div class="p2-content">
+                <h3>
+                  Athens Access
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="right-projects">
+            <div class="project-3">
+              <div class="p3-content">
+                <h3>
+                  SWF2 Jukebox
+                </h3>
+                <p>
+                  Using the iTunes API, created 
+                  a jukebox for the songs used in the 
+                  Street Woman Fighter 2 finals.
+                </p>
+              </div>
+            </div>
+            <div class="project-4">
+              <div class="p4-content">
+                <h3>
+                  Book Booth
+                </h3>
+                <p>
+                  Using the Open Library API, created a book 
+                  recommender that outputs 5 random books based 
+                  on a one word input.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="title-flexbox">
+        <div class="project-triangle"></div>
+        <div class="title-card">
+          <h1 id="projects-title"><span id="bold">P</span>rojects</h1>
+          <a href="https://medium.com/@bani-ebegbodi" target="_blank">
+            <button id="view-projects">
+              View All
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--Contact Me-->
+    <section id="contact">
+      <div class="icon-container">
+        <a href="mailto:bani.ebegbodi@gmail.com" target="_blank"><div id="email"><img alt="email_icon" src="images/email_icon.png"></div></a>
+        <a href="www.linkedin.com/in/bani-ebegbodi" target="_blank"><div id="linkedin"><img alt="linkedin_icon" src="images/linkedin_icon.png"></div></a>
+        <a href="https://github.com/bani-ebegbodi" target="_blank"><div id="github"><img alt="github_icon" src="images/github_icon.png" ></div></a>
+        <a href="https://medium.com/@bani-ebegbodi" target="_blank"><div id="medium"><svg alt="medium_icon" xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#eee3dc" class="bi bi-medium" viewBox="0 0 16 16">
+          <path d="M9.025 8c0 2.485-2.02 4.5-4.513 4.5A4.506 4.506 0 0 1 0 8c0-2.486 2.02-4.5 4.512-4.5A4.506 4.506 0 0 1 9.025 8m4.95 0c0 2.34-1.01 4.236-2.256 4.236S9.463 10.339 9.463 8c0-2.34 1.01-4.236 2.256-4.236S13.975 5.661 13.975 8M16 8c0 2.096-.355 3.795-.794 3.795-.438 0-.793-1.7-.793-3.795 0-2.096.355-3.795.794-3.795.438 0 .793 1.699.793 3.795"/>
+          </svg></i></div></a>
+      </div>
+      <div class="footer-line-block">
+        <div class="footer-line-1"></div>
+        <div class="footer-line-2"></div>
+      </div>
+      <a href="#home"><img id="contact-logo" src="images/be_logo.svg" /></a>
+      <footer>
+        <p>
+          Copyright @ <script>document.write(new Date().getFullYear())</script>
+          Banibe Ebegbodi | All Rights Reserved.
+        </p>
+      </footer>
+    </section>
+  </body>
+  <script src="script.js"></script>
 </html>

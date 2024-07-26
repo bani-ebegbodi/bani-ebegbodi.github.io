@@ -1,0 +1,405 @@
+/* imports */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+/* overall page */
+html, body {
+    background-color: #eee3dc;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-left: 50px;
+    padding-right: 70px;
+}
+
+
+@font-face {
+    font-family: "Cantarell";
+    src: url(fonts/Cantarell/Cantarell-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Red Hat Display";
+    src: url(fonts/Red_Hat_Display/static/RedHatDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Red Hat Display Bold";
+    src: url(fonts/Red_Hat_Display/static/RedHatDisplay-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+h1 {
+    font-family: "Red Hat Display";
+    font-weight: normal;
+    font-size: 100px;
+}
+
+h2 {
+    font-family: "Cantarell";
+    font-weight: normal;
+    font-size: 48px;
+    color: #354F52;
+}
+
+h3 {
+    font-family: "Cantarell";
+    font-weight: normal;
+    font-size: 32px;
+}
+
+p {
+    font-family: "Inter";
+    font-size: 30px;
+}
+
+button {
+    font-family: "Cantarell";
+    font-size: 48px;
+    padding: 2px 52px 2px 20px;
+    border: none;
+}
+
+/* nav bar */
+
+
+#home_logo {
+    width: 65px;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    z-index: 1000;
+
+   font-family: "Cantarell"; 
+   font-size: 20px;
+
+   a {
+    padding: 8px;
+   }
+
+   a:link, a:visited {
+    color: #52796F;
+    text-decoration: none;
+    }
+
+   ul {
+    list-style-type: none;
+    padding-left: 7px;
+    padding-right: 7%;
+   }
+
+   li {
+    display: inline;
+   }
+
+}
+
+.seperator {
+    flex-grow: 1;
+    height: 2.5px;
+    background-color: #C8553D;
+    margin: 0 20px;
+    border: none;
+    max-width: 65%;
+    transition: max-width 3s ease-out;
+}
+
+/* nav bar transition */
+body.loaded .separator {
+    max-width: 100%;
+}
+
+body:not(.loaded) .separator {
+    max-width: 0;
+}
+
+section {
+    height: 100vh;
+}
+
+/*home section */
+
+.home {
+    padding-top: 3%;
+}
+
+.name-shape-space {
+    display: flex;
+}
+
+.shapes {
+    padding-left: 8px;
+    padding-right: 80px;
+    padding-top: 80px;
+}
+
+#bold {
+    font-family: "Red Hat Display Bold";
+}
+
+#name {
+    padding-right: 1%;
+    color: #354F52;
+}
+
+.description {
+    padding-right: 40%;
+    padding-bottom: 20%;
+    line-height: 50px;
+}
+
+.desc-line {
+    border-left: 3px solid #C8553D;
+    height: 200px;
+    padding-left: 20px;
+   }   
+
+   /*about me section */
+
+   #about {
+    display: flex;
+   }
+
+   .triangle-container {
+    position: relative;
+    width: 0;
+    height: 0;
+   }
+
+   .about-triangle {
+    width: 0;
+    height: 0;
+    border-top: 48.5rem solid transparent;
+    border-left: 56.25rem solid #C8553D;
+    border-bottom: 0rem solid transparent;
+    transform: translate(-50px);
+    }
+
+   .triangle-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding-top: 13rem;  
+    }
+
+   #about_me {
+    color: #eee3dc;
+   }
+
+   #resume {
+    color: #C8553D;
+    border-radius: 0px 30px 30px 0px;
+    background-color: #eee3dc;
+   }
+
+   .about-line {
+    padding-left: 40%;
+    padding-top: 5%;
+    text-align: right;
+    line-height: 50px;
+   }
+
+   /* Project section */
+
+   #projects {
+    display: inline-flex;
+   }
+
+   .project-flexbox {
+    width: fit-content;
+    padding-top: 5rem;
+   }
+
+   .title-flexbox {
+    width: 39rem;
+   }
+
+   .feat-line {
+    border-left: 3px solid #C8553D;
+    height: 55px;
+    padding-left: 20px;
+    line-height: 3.4rem;
+   }
+
+   .sandwiched-projects {
+    display: inline-flex;
+    max-height: 80%;
+    p {
+        font-size: 15px;
+    }
+   }
+
+   .left-projects {
+    display: flexbox;
+    flex-direction: column;
+    width: fit-content;
+    padding: 1rem 1rem 0rem 1rem;
+
+   }
+
+   .right-projects {
+    display: flexbox;
+    flex-direction: column;
+    width: fit-content;
+    padding: 1rem 1rem 0rem 1rem;
+   }
+
+   .project-1 {
+    height: 225px;
+    width: 340px;
+    background-color: #588B8B;
+   }
+
+   .p1-content {
+    text-align: right;
+    color: #eee3dc;
+   }
+
+   .project-2 {
+    height: 225px;
+    width: 340px;
+    background-color: #354F52;
+   }
+
+   .p2-content {
+    text-align: left;
+    color: #eee3dc;
+   }
+
+   .project-3 {
+    height: 225px;
+    width: 340px;
+    background-color: #C8553D;
+   }
+
+   .p3-content {
+    text-align: left;
+   }
+
+   .project-4 {
+    height: 225px;
+    width: 340px;
+    background-color: #F6BB63;
+   }
+
+   .p4-content {
+    text-align: right;
+   }
+
+   .project-triangle {
+    width: 0;
+	height: 0;
+	border-top: 0rem solid transparent;
+	border-right: 40rem solid #C8553D;
+	border-bottom: 250px solid transparent;
+    transform: translate(6.75rem);
+   }
+
+   .title-card {
+    text-align: right;
+   }
+
+   #projects-title {
+    color: #354F52;
+   }
+
+   #view-projects {
+    color: #eee3dc;
+    border-radius: 30px 0px 0px 30px;
+    background-color: #354F52;
+   }
+
+   /* contact me section */
+
+   .icon-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding-top: 18rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    }
+
+   #email {
+    background-color: #354F52;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 0px 0px 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 80px;
+    }
+   }
+
+
+   #linkedin {
+    background-color: #354F52;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 0px 0px 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 80px;
+    }
+   }
+
+   #github {
+    background-color: #354F52;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 0px 0px 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 80px;
+    }
+   }
+
+   #medium {
+    background-color: #354F52;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 0px 0px 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 80px;
+    }
+   }
+
+   #contact-logo {
+    width: 93px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+   }
+
+   footer {
+    font-family: "Cantarell";
+    color: #52796F;
+    font-size: 24px;
+    text-align: center;
+}
+
